@@ -1,0 +1,177 @@
+.chat-title {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  font-size: 18px;
+  text-decoration: underline;
+  align-items: center;
+}
+
+.chat-title-button {
+  padding: 8px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.chat-right {
+  display: flex;
+  direction: rtl;
+  padding-top: 8px;
+  unicode-bidi: bidi-override;
+}
+
+.chat-left {
+  display: flex;
+  padding-top: 8px;
+}
+
+
+.chat-right-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.chat-left-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.scroll {
+  width: 100%;
+  height: 600px;
+  overflow: scroll;
+}
+
+.padding8 {
+  padding-top: 8px;
+}
+
+.send-button {
+  height: 80px;
+  width: 80px;
+  border-radius: 8px;
+  background-color: #7367f0;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 800px) {
+  .chat-right-text {
+    align-self: center;
+    padding: 8px;
+    background-color: #7367f0;
+    margin-right: 16px;
+    border-radius: 8px;
+    color: white;
+    direction: ltr;
+  }
+  .chat-right-text2 {
+    align-self: center;
+    padding: 8px;
+    background-color: #7367f0;
+    margin-right: 66px;
+    border-radius: 8px;
+    color: white;
+    direction: ltr;
+  }
+  .chat-left-text {
+    align-self: center;
+    padding: 8px;
+    background-color: #696969;
+    margin-left: 16px;
+    border-radius: 8px;
+    color: white;
+  }
+  .chat-left-text2 {
+    align-self: center;
+    padding: 8px;
+    background-color: #696969;
+    margin-left: 66px;
+    border-radius: 8px;
+    color: white;
+  }
+  .send-box-area {
+    width: 280%;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .send-box {
+    display: flex;
+    place-content: space-between;
+    padding: 16px;
+    margin: 16px;
+  }
+  .send-teacher-button {
+    height: 80px;
+    width: 80px;
+    border-radius: 8px;
+    background-color: #696969;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .chat-right-text {
+    align-self: center;
+    padding: 8px;
+    background-color: #7367f0;
+    border-radius: 8px;
+    color: white;
+    direction: ltr;
+  }
+  .chat-right-text2 {
+    align-self: center;
+    padding: 8px;
+    background-color: #7367f0;
+    border-radius: 8px;
+    color: white;
+    direction: ltr;
+  }
+  .chat-left-text {
+    align-self: center;
+    padding: 8px;
+    background-color: #696969;
+    border-radius: 8px;
+    color: white;
+  }
+  .chat-left-text2 {
+    align-self: center;
+    padding: 8px;
+    background-color: #696969;
+    border-radius: 8px;
+    color: white;
+  }
+  .send-box-area {
+    width: 127%;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .send-box {
+    display: flex;
+    place-content: space-between;
+    padding: 16px 0 16px;
+    margin: 16px 0 16px;
+  }
+  .send-teacher-button {
+    height: 80px;
+    width: 56px;
+    border-radius: 8px;
+    background-color: #696969;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+}

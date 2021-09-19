@@ -1,0 +1,19 @@
+.delete-btn {
+  padding: 4px;
+  margin: 4px;
+  border-color: transparent;
+  border-radius: 16px;
+  background-color: #d92662;
+  color: white;
+}
+
+@media screen and (min-width: 800px) {
+  .delete-btn {
+    width: 23%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .delete-btn {
+    width: 60%;
+  }
+}

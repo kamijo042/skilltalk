@@ -1,0 +1,23 @@
+.favorit {
+  text-align: center;
+  border: 1px solid #4285F4;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.white {
+  color: #4285F4;
+  font-size: 16px;
+  background-color: white;
+  border-color: transparent;
+}
+
+.own-class {
+  text-align: center;
+  background-color: #d92662;
+  color: white;
+  padding: 8px;
+  margin: 0 48px 16px;
+  border-radius: 10px;
+}

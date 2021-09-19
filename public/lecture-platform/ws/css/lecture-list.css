@@ -1,0 +1,33 @@
+.d-flex {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;  
+}
+
+.min-width {
+  min-width: 200px;
+}
+
+.mypage-iframe-box {
+  height: 387px;
+}
+
+.cancel-btn {
+  background-color: #d92662;
+  color: white;
+  border: 1px solid transparent;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.cancel-field {
+  text-align: right;
+  margin: 16px;
+}

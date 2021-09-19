@@ -1,0 +1,304 @@
+.error {
+  color: red;
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.lecture-item {
+  color: #333;
+}
+
+.lecture-description {
+  font-size: 12px;
+  color: #555;
+}
+
+.first-color {
+  color: #333;
+}
+
+.second-color {
+  color: #555
+}
+
+.def-font-size {
+  font-size: 16px;
+}
+
+.pl-16 {
+  padding-left: 16px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.max-w-370 {
+  max-width: 370px;
+}
+
+.min-w-200 {
+  min-width: 200px;
+}
+
+.img-radius {
+  padding: 24px;
+  border-radius: 36px;
+}
+
+.button-form {
+  width: 100%;
+  height: 36px;
+  border-radius: 8px
+}
+
+.btn-twitter {
+  background: linear-gradient(45deg, #1DA1F2 0%, #00acee 100%);
+  border-color: #00acee;
+  color: #ffffff !important;
+}
+
+.btn-google {
+  background: linear-gradient(45deg, #3cba54 0%, #1AA260 100%);
+  border-color: #f4c20d;
+  color: #ffffff !important;
+}
+
+.detail-item {
+  padding: 24px;
+}
+
+.detail-item-button {
+  padding: 0px 24px 24px;
+  display: flex;
+}
+
+.detail-title {
+  font-size: 20px;
+  color: #333;
+  text-decoration: underline;
+  padding-bottom: 4px;
+}
+
+.detail-desc {
+  font-size: 16px;
+  color: #555;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.brand {
+  border: 1px solid;
+  padding: 4px;
+}
+
+.already-text {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.already-payment {
+  padding: 16px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #d92662;
+  margin: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+#payjp_checkout_box {
+  padding: 1rem!important;
+}
+
+#payjp_checkout_box input[type=button] {
+  background-color: #28a745 !important;
+  background-image: -webkit-linear-gradient(#28a745 0,#28a745 48%,#28a745 100%) !important;
+  width: 100%;
+  font-size: 16px !important;
+  padding: 16px 16px !important;
+  font-weight: 600;
+  border-radius: .3rem !important;
+}
+
+.card_checkout_padding {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.card_checkout {
+  color: #fff;
+  border-color: transparent;
+  background-color: #919aa5;
+  font-size: 16px;
+  padding: 16px 16px;
+  font-weight: 600;
+  border-radius: .3rem;
+}
+
+.status-flex {
+  display: flex;
+  padding-left: 24px;
+}
+
+.padding-top {
+  padding-top: 8px;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table tr{
+  border-bottom: solid 1px #eee;
+  cursor: pointer;
+}
+
+table tr:hover{
+  background-color: #d4f0fd;
+}
+
+table th,table td{
+  text-align: center;
+  width: 25%;
+  padding: 15px 0;
+}
+
+.modal-title {
+  padding-left: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-top: 8px;
+}
+
+.modal-description {
+  padding: 16px;
+}
+
+.entry-btn {
+  background-color: #28a745;
+  color: #FFF;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.entry-field {
+  text-align: center;
+  padding: 0 16px;
+}
+
+.already-card-btn {
+  width: 100%;
+  border: 1px;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #919aa5;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.review-box {
+    margin: 16px;
+}
+
+.review-box-area {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.center {
+  text-align: center;
+}
+
+.review-btn {
+    width: 200px;
+    border-radius: 8px;
+    background-color: #7367f0;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .h-239 {
+    height: 176.39px;
+  }
+  .w-132 {
+    width: 87.82px;
+  }
+  .mt-8-sp {
+    margin-top: 8px;
+  }
+  .sp-none {
+    display: none;
+  }
+  .vh-login {
+    height: 88vh!important;
+  }
+  .py-3 {
+    padding-bottom: 0px!important;
+  }
+  .iframe-box {
+    width: 330px;
+    height: 213px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .h-239 {
+    height: 239.63px;
+  }
+  .w-132 {
+    width: 132.83px;
+  }
+  .d-flex-pc {
+    display: flex;
+  }
+  .mt-24-pc {
+    margin-top: 24px;
+  }
+  .iframe-box {
+    width: 700px;
+    height: 420px;
+  }
+  .flex-center-pc {
+    display: flex;
+    justify-content: center;
+  }
+  .vh-login {
+    height: 82vh!important;
+  }
+  .ml-16-pc {
+    margin-left: 16px;
+  }
+}
+

@@ -1,0 +1,85 @@
+.total-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.total-block_title {
+    font-size: 24px;
+}
+
+.total-block_price {
+    font-size: 20px;
+}
+
+.revenue-block {
+    padding: 24px;
+    border-radius: 8px;
+    margin: 24px;
+}
+
+.submit-block {
+    text-align: center;
+}
+
+.payout-submit {
+    background-color: #28a745;
+    color: #FFF;
+    border: 1px solid transparent;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 50%;
+    margin-top: 16px;
+}
+
+.payout-disabled {
+    border: 1px solid #111111;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 50%;
+    margin-top: 16px;
+}
+
+.d-flex {
+  padding: 8px;
+  font-size: 14px;
+  align-items: center;
+}
+.padding-top {
+    padding-top: 16px;
+}
+.bold {
+  font-weight: bold;
+}
+@media screen and (min-width: 800px) {
+  .min-width {
+    min-width: 200px;
+  }
+  .padding {
+    padding: 16px;
+  }
+  .payout-info {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .min-width {
+    min-width: 96px;
+  }
+  .padding {
+    padding: 16px 0 16px 0;
+  }
+  .pc-none {
+    display: none;
+  }
+  .payout-info {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
