@@ -44,7 +44,7 @@ class PayoutController extends Controller
 
     public function index()
     {
-        $menu_type = "list";
+        $menu_type = "top";
 
         $transactions = Transactions::select('transactions.id','lectures.user_id','transactions.fixed_price','lectures.title','transactions.created_at')
             ->join('lectures','lectures.id','=','transactions.lecture_id')
@@ -53,6 +53,24 @@ class PayoutController extends Controller
             ->get();
 
         return view('mypage.payout.index', compact(['menu_type', 'transactions']));
+    }
+
+    public function transfered()
+    {
+        $menu_type = "transfered";
+        $payouts = Payouts::where('user_id', Auth::id())->where('status', 2)->get();
+        $tran_status = Payouts::TRANSACTION_STATUS;
+
+        foreach ($payouts as $payout) {
+            $transactions = PayoutDetails::select('transactions.id', 'lectures.title', 'transactions.fixed_price')
+                ->join('transactions', 'transactions.id', '=', 'payout_details.transaction_id')
+                ->join('lectures', 'lectures.id', '=', 'transactions.lecture_id')
+                ->where('payout_details.payout_id', $payout->id)
+                ->get();
+            $payout->transactions = $transactions;
+        }
+
+        return view('mypage.payout.transfered', compact(['menu_type', 'tran_status', 'payouts']));
     }
 
     public function submit()

@@ -50,7 +50,7 @@
                                 </div>
                             </a>
                         </div>
-                    <a href="{{ route('password.request') }}" class="text-decoration-none">
+                    <a href="{{ route('reset.password') }}" class="text-decoration-none">
                         <p class="text-center">パスワードを忘れた方</p>
                     </a>
                     <div class="d-flex align-items-center justify-content-center">

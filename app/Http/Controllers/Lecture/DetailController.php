@@ -10,6 +10,7 @@ use Carbon\Carbon;
 
 use App\Models\Lectures;
 use App\Models\Coupons;
+use App\Models\Reviews;
 use App\Models\LectureBooks;
 use App\Models\LectureFavorits;
 use App\Components\GcsUtils;
@@ -96,6 +97,12 @@ class DetailController extends Controller
             $isFavorit = LectureFavorits::where('lecture_id', $lecture_id)->where('user_id', Auth::user()->id)->exists();
         }
 
-        return view('lecture.detail', compact(['lecture', 'coupon', 'discount_price', 'fixed_price', 'cardList', 'isBook', 'isFavorit']));
+        $reviews = Reviews::select('reviews.created_at', 'users.name', 'images.image_name', 'reviews.rank', 'reviews.comment')
+            ->join('users','reviews.user_id', '=', 'users.id')
+            ->join('images','reviews.image_id', '=', 'images.id')
+            ->where('lecture_id', $lecture_id)
+            ->get();
+
+        return view('lecture.detail', compact(['lecture', 'coupon', 'discount_price', 'fixed_price', 'reviews', 'cardList', 'isBook', 'isFavorit']));
     }
 }

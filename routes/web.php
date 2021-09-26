@@ -39,12 +39,21 @@ Route::group(['prefix' => 'lecture'], function(){
     Route::get('login/google', [App\Http\Controllers\LoginController::class, 'redirectToGoogleProvider'])->name('login.google');
     Route::get('login/google/callback', [App\Http\Controllers\LoginController::class, 'handleProviderGoogleCallback'])->name('login.google.callback');
 
+    // forget password
+    Route::get('/forgot-password', [App\Http\Controllers\ResetPasswordController::class, 'index'])->name('reset.password');
+    Route::get('/password/reset-form/{token}', [App\Http\Controllers\ResetPasswordController::class, 'showResetForm'])->name('reset.reser-form');
+
     Route::get('/', [App\Http\Controllers\Lecture\IndexController::class, 'index'])->name('lecture.index');
     Route::get('/detail/{lecture_id}', [App\Http\Controllers\Lecture\DetailController::class, 'index'])->name('lecture.detail');
     Route::get('/payment/{lecture_id}', [App\Http\Controllers\Lecture\PaymentController::class, 'index'])->name('lecture.payment');
     Route::post('/favorit', [App\Http\Controllers\Lecture\FavoritController::class, 'add_favorit'])->name('lecture.detail.favorit.post');
     Route::post('/favorit-delete', [App\Http\Controllers\Lecture\FavoritController::class, 'delete_favorit'])->name('lecture.detail.favorit-delete.post');
     Route::post('/payment', [App\Http\Controllers\Lecture\PaymentController::class, 'payment'])->name('lecture.payment.post');
+
+    // お問い合わせ関連
+    Route::get('/faq', [App\Http\Controllers\Lecture\FaqController::class, 'index'])->name('lecture.faq');
+    Route::get('/contact', [App\Http\Controllers\Lecture\FaqController::class, 'contact'])->name('lecture.contact');
+    Route::post('/contact', [App\Http\Controllers\Lecture\FaqController::class, 'send_contact'])->name('lecture.contact.post');
 });
 
 Route::group(['prefix' => 'lecture/mypage'], function(){
@@ -79,6 +88,7 @@ Route::group(['prefix' => 'lecture/mypage'], function(){
 
     // Payout
     Route::get('/payout', [App\Http\Controllers\Mypage\PayoutController::class, 'index'])->name('mypage.payout');
+    Route::get('/payout/transfered', [App\Http\Controllers\Mypage\PayoutController::class, 'transfered'])->name('mypage.payout.transfered');
     Route::get('/payout/submit', [App\Http\Controllers\Mypage\PayoutController::class, 'submit'])->name('mypage.payout.submit');
     Route::post('/payout/submit', [App\Http\Controllers\Mypage\PayoutController::class, 'submit_post'])->name('mypage.payout.submit.post');
 

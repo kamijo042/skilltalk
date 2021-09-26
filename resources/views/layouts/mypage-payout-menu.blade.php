@@ -28,7 +28,7 @@
                                     <h6 class="font-weight-bold m-0 text-dark"><i class="feather-lock bg-danger text-white p-2 rounded-circle mr-2"></i> 売上予定</h6>
                                 </div>
                                 <div class="right ml-auto">
-                                    <h6 class="font-weight-bold m-0">@if($menu_type==='list')<i class="feather-user-check">@else<i class="feather-chevron-right">@endif</i></h6>
+                                    <h6 class="font-weight-bold m-0">@if($menu_type==='top')<i class="feather-user-check">@else<i class="feather-chevron-right">@endif</i></h6>
                                 </div>
                             </a>
                             <a href="{{route('mypage.payout.submit')}}" class="d-flex w-100 align-items-center px-3 py-4">
@@ -39,12 +39,12 @@
                                     <h6 class="font-weight-bold m-0">@if($menu_type==='submit')<i class="feather-user-check">@else<i class="feather-chevron-right">@endif</i></h6>
                                 </div>
                             </a>
-                            <a href="{{route('mypage.lecture-own.fixed')}}" class="d-flex w-100 align-items-center px-3 py-4">
+                            <a href="{{route('mypage.payout.transfered')}}" class="d-flex w-100 align-items-center px-3 py-4">
                                 <div class="left mr-3">
                                     <h6 class="font-weight-bold m-0 text-dark"><i class="feather-star bg-danger text-white p-2 rounded-circle mr-2"></i> 支払履歴</h6>
                                 </div>
                                 <div class="right ml-auto">
-                                    <h6 class="font-weight-bold m-0">@if($menu_type==='fixed')<i class="feather-user-check">@else<i class="feather-chevron-right">@endif</i></h6>
+                                    <h6 class="font-weight-bold m-0">@if($menu_type==='transfered')<i class="feather-user-check">@else<i class="feather-chevron-right">@endif</i></h6>
                                 </div>
                             </a>
                         </div>

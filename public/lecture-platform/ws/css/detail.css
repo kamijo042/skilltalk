@@ -21,3 +21,9 @@
   margin: 0 48px 16px;
   border-radius: 10px;
 }
+
+.non-review {
+  text-align: center;
+  padding: 24px;
+  font-size: 15px;
+}

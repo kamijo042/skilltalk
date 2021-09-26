@@ -144,52 +144,39 @@
 
                         <div class="detail-item">
                             <div class="detail-title">講義レビュー</div>
-                            <div class="reviews-members py-3">
-                                <div class="media">
-                                    <a href="#"><img alt="#" src="/lecture-platform/ws/img/{{$lecture->image_name}}" width="50" height="50" class="mr-3 rounded-pill"></a>
-                                    <div class="media-body">
-                                        <div class="reviews-members-header">
-                                            <div class="star-rating float-right">
-                                                <div class="d-inline-block" style="font-size: 14px;"><i class="feather-star text-warning"></i>
-                                                    <i class="feather-star text-warning"></i>
-                                                    <i class="feather-star text-warning"></i>
-                                                    <i class="feather-star text-warning"></i>
-                                                    <i class="feather-star"></i>
-                                                </div>
-                                            </div>
-                                            <h6 class="mb-0"><a class="text-dark" href="#">Boppier</a></h6>
-                                            <p class="text-muted small">2021/07/15</p>
-                                        </div>
-                                        <div class="reviews-members-body">
-                                            <p>とてもわかりやすい講義でした。実際に自分のパソコンで操作しながら、教えてもらえるので、最後まで理解しながら画面が作れました。</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="reviews-members py-3">
-                                <div class="media">
-                                    <a href="#"><img alt="#" src="/lecture-platform/ws/img/mountains04.jpg" width="50" height="50" class="mr-3 rounded-pill"></a>
-                                    <div class="media-body">
-                                        <div class="reviews-members-header">
-                                            <div class="star-rating float-right">
-                                                <div class="d-inline-block" style="font-size: 14px;"><i class="feather-star text-warning"></i>
-                                                    <i class="feather-star text-warning"></i>
-                                                    <i class="feather-star"></i>
-                                                    <i class="feather-star"></i>
-                                                    <i class="feather-star"></i>
-                                                </div>
-                                            </div>
-                                            <h6 class="mb-0"><a class="text-dark" href="#">Mariko</a></h6>
-                                            <p class="text-muted small">2021/08/03</p>
-                                        </div>
-                                        <div class="reviews-members-body">
-                                            <p>講義自体が悪くないが、ネットに転がっているブログでただで学習できる内容。それにしては値段が高い設定。</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
+                            @if (empty($reviews))
+                              <div class="non-review">レビュー投稿がありません。</div>
+                            @else
+                              @foreach($reviews as $review)
+                              <div class="reviews-members py-3">
+                                  <div class="media">
+                                      <a href="#"><img alt="#" src="/lecture-platform/ws/img/{{$review->image_name}}" width="50" height="50" class="mr-3 rounded-pill"></a>
+                                      <div class="media-body">
+                                          <div class="reviews-members-header">
+                                              <div class="star-rating float-right">
+                                                  <div class="d-inline-block" style="font-size: 14px;">
+                                                      (+{{$review->rank}})
+                                                      @for($i=1;$i<=5;$i++)
+                                                        @if($i<=$review->rank)
+                                                          <i class="feather-star text-warning"></i>
+                                                        @else
+                                                          <i class="feather-star"></i>
+                                                        @endif
+                                                      @endfor
+                                                  </div>
+                                              </div>
+                                              <h6 class="mb-0"><a class="text-dark" href="#">{{$review->name}}</a></h6>
+                                              <p class="text-muted small">{{date('Y/m/d', strtotime($review->created_at))}}</p>
+                                          </div>
+                                          <div class="reviews-members-body">
+                                              <p>{!! nl2br(e($review->comment)) !!}</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <hr>
+                              @endforeach
+                            @endif
 
                         </div>
                     </div>
