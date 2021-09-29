@@ -53,8 +53,8 @@
                                     <i class="feather-sunset h6 mr-2 mb-0"></i>講義/セミナーを見る
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="profile.html" target="_blank">講義を探す</a>
-                                    <a class="dropdown-item" href="{{route('mypage.lecture-own')}}" target="_blank">講義を作成する</a>
+                                    <a class="dropdown-item" href="{{route('lecture.index')}}">講義を探す</a>
+                                    <a class="dropdown-item" href="{{route('lecture.entry')}}">講義を作成する</a>
                                     <a class="dropdown-item" href="{{route('mypage.lecture-own')}}" target="_blank">評価の高い講義を見る</a>
                                 </div>
                             </div>
@@ -152,7 +152,6 @@
                                 <div class="d-flex align-items-center">
                                     <a class="btn btn-icon btn-outline-light mr-1 btn-sm" title="Facebook" target="_blank" href="#"><i class="feather-facebook"></i></a>
                                     <a class="btn btn-icon btn-outline-light mr-1 btn-sm" title="Instagram" target="_blank" href="#"><i class="feather-instagram"></i></a>
-                                    <a class="btn btn-icon btn-outline-light mr-1 btn-sm" title="Youtube" target="_blank" href="#"><i class="feather-youtube"></i></a>
                                     <a class="btn btn-icon btn-outline-light mr-1 btn-sm" title="Twitter" target="_blank" href="#"><i class="feather-twitter"></i></a>
                                 </div>
                             </div>
@@ -162,37 +161,37 @@
                         <h6 class="title">運営情報</h6>
                         <ul class="list-unstyled hov_footer">
                             <li> <a href="https://white-sands.biz" class="text-muted">企業情報</a></li>
-                            <li> <a href="maintence.html" class="text-muted">講義パートナー募集</a></li>
-                            <li> <a href="coming-soon.html" class="text-muted">開発パートナー募集</a></li>
+                            <li> <a href="{{route('lecture.entry')}}" class="text-muted">講義パートナー募集</a></li>
+                            <!--li> <a href="coming-soon.html" class="text-muted">開発パートナー募集</a></li-->
                         </ul>
                     </aside>
                     <aside class="col-sm-3 col-md-2 text-white">
                         <h6 class="title">講師・セミナー主催者</h6>
                         <ul class="list-unstyled hov_footer">
-                            <li> <a href="faq.html" class="text-muted">講義パートナーになる</a></li>
-                            <li> <a href="contact-us.html" class="text-muted">講義を開く</a></li>
-                            <li> <a href="terms.html" class="text-muted">講師用管理画面</a></li>
-                            <li> <a href="privacy.html" class="text-muted">講師規約</a></li>
-                            <li> <a href="favorites.htdml" class="text-muted"> 講師キャンセルポリシー </a></li>
+                            <li> <a href="{{route('lecture.entry')}}" class="text-muted">講義パートナーになる</a></li>
+                            <li> <a href="{{route('lecture.entry')}}" class="text-muted">講義を開く</a></li>
+                            <li> <a href="{{route('mypage.lecture-own')}}" class="text-muted">講師用管理画面</a></li>
+                            <!--li> <a href="privacy.html" class="text-muted">講師規約</a></li>
+                            <li> <a href="favorites.htdml" class="text-muted"> 講師キャンセルポリシー </a></li-->
                         </ul>
                     </aside>
                     <aside class="col-sm-3  col-md-2 text-white">
                         <h6 class="title">受講者・視聴者</h6>
                         <ul class="list-unstyled hov_footer">
-                            <li> <a href="login.html" class="text-muted"> 講義を探す </a></li>
-                            <li> <a href="signup.html" class="text-muted"> 受講者管理画面 </a></li>
-                            <li> <a href="signup.html" class="text-muted"> 受講者規約 </a></li>
-                            <li> <a href="favorites.html" class="text-muted"> 受講者キャンセルポリシー </a></li>
+                            <li> <a href="{{route('lecture.index')}}" class="text-muted"> 講義を探す </a></li>
+                            <li> <a href="{{route('mypage.lecture-list')}}" class="text-muted"> 受講者管理画面 </a></li>
+                            <!--li> <a href="signup.html" class="text-muted"> 受講者規約 </a></li>
+                            <li> <a href="favorites.html" class="text-muted"> 受講者キャンセルポリシー </a></li-->
                         </ul>
                     </aside>
                     <aside class="col-sm-3  col-md-2 text-white">
                         <h6 class="title">スキルトーク</h6>
                         <ul class="list-unstyled hov_footer">
-                            <li> <a href="trending.html" class="text-muted"> よくある質問 </a></li>
-                            <li> <a href="most_popular.html" class="text-muted"> お問い合わせ </a></li>
-                            <li> <a href="restaurant.html" class="text-muted"> プライバシーポリシー </a></li>
-                            <li> <a href="maintence.html" class="text-muted">講義パートナー募集</a></li>
-                            <li> <a href="coming-soon.html" class="text-muted">開発パートナー募集</a></li>
+                            <li> <a href="{{route('lecture.faq')}}" class="text-muted"> よくある質問 </a></li>
+                            <li> <a href="{{route('lecture.contact')}}" class="text-muted"> お問い合わせ </a></li>
+                            <li> <a href="{{route('lecture.privacy')}}" class="text-muted"> プライバシーポリシー </a></li>
+                            <li> <a href="{{route('lecture.entry')}}" class="text-muted">講義パートナー募集</a></li>
+                            <!--li> <a href="coming-soon.html" class="text-muted">開発パートナー募集</a></li-->
                         </ul>
                     </aside>
                 </div>

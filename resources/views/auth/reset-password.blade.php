@@ -1,36 +1,43 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
+@extends('layouts/lecture-header')
+@section('main.content')
 
-        <x-jet-validation-errors class="mb-4" />
-
-        <form method="POST" action="{{ route('password.update') }}">
-            @csrf
-
-            <input type="hidden" name="token" value="{{ $token }}">
-
-            <div class="block">
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" value="" required autofocus />
+<div class="osahan-home-page">
+    <div class="bg-primary p-3 d-none">
+        <div class="text-white">
+            <div class="title align-items-center">
+                <a class="toggle" href="#">
+                    <span></span>
+                </a>
+                <h4 class="font-weight-bold m-0" style="font-size:18px;text-align:center;">Skill Evolution</h4>
             </div>
-
-            <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+        </div>
+    </div>
+    <div class="vh-login">
+        <div class="d-flex align-items-center justify-content-center vh-login">
+            <div class="px-12 col-md-12 ml-auto">
+                <div class="px-12 col-md-8 col-sm-12 mx-auto">
+                    <h2 class="first-color text-dark my-0">パスワードの再設定</h2>
+                    <p class="second-color text-50">パスワードを再設定してください。</p>
+                    <form class="mt-5 mb-4" method="POST" action="{{ route('password.update') }}">
+                        @csrf
+                        <input type="hidden" name="token" value="{{ $token }}">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-dark">メールアドレス</label>
+                            <input type="email" placeholder="test@test.com" required :value="old('email')" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-dark">パスワード</label>
+                            <input type="password" required class="form-control" id="password" name="password" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-dark">確認用パスワード</label>
+                            <input type="password" required class="form-control" id="password_confirmation" name="password_confirmation" >
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block">パスワードを再設定する</button>
+                    </form>
+                </div>
             </div>
-
-            <div class="mt-4">
-                <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
-                <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <x-jet-button>
-                    {{ __('Reset Password') }}
-                </x-jet-button>
-            </div>
-        </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+        </div>
+    </div>
+</div>
+@endsection

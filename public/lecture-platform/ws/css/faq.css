@@ -42,6 +42,20 @@
     font-size: 26px;
     padding: 24px;
 }
+
+.privacy-middle {
+}
+.privacy-middle_title {
+    padding: 16px;
+    color: #4C443D;
+    font-size: 20px;
+}
+.privacy-middle_desc {
+    padding: 16px;
+    font-size: 16px;
+    color: #666666;
+}
+
 input[type=radio] {
     display: none;
 }
@@ -158,4 +172,26 @@ input[type=checkbox] + label.contact-type::after {
     color: #FFF;
     padding: 8px;
     border-radius: 8px;
+}
+
+.privacy-block {
+    margin: 80px;
+    padding: 40px;
+    border: 2px solid #6c757d;
+    border-radius: 8px;
+}
+.privacy-block_title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.privacy-block_date {
+    text-align: center;
+    color: #999;
+    margin-bottom: 32px;
+}
+.privacy-block_top {
+    color: #666;
+    font-size: 16px;
+    padding: 16px;
 }

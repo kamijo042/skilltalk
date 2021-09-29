@@ -1,0 +1,128 @@
+.entry-block {
+    margin: 40px;
+    padding: 16px;
+}
+
+.entry-block_title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 28px;
+}
+
+.entry-block_flow {
+    text-align: center;
+}
+
+.entry-block_desc {
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.margin-top {
+    margin-top: 16px;
+}
+
+.rec-block {
+    border: 1px dashed #17a2b8;
+    padding: 8px 24px 24px 24px;
+    border: 1px dashed #17a2b8;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.rec-block_detail {
+    display: flex;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.rec-block_detail_num {
+    background-color: #17a2b8;
+    padding: 8px;
+    color: #FFF;
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rec-block_detail_desc {
+    margin-left: 16px;
+    padding: 8px;
+}
+
+.flow-title {
+    color: #666;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 24px;
+    margin-left: 300px;
+}
+
+.flow-desc {
+    font-size: 20px;
+    text-align: center;
+}
+
+.box {
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+.box ul, ol {
+  background: #fffcf4;
+  border-radius :8px;/*角の丸み*/
+  box-shadow :0px 0px 5px silver;/*5px=影の広がり具合*/
+  padding: 0.5em 0.5em 0.5em 2em;
+  font-size: 20px;
+}
+.box ul li, ol li {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+.entry-btn {
+    background-color: #28a745;
+    color: #FFF;
+    border: 0px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inquiry-btn {
+    background-color: #17a2b8;
+    color: #FFF;
+    border: 0px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .entry-block {
+    margin: 8px;
+  }
+  .rec-block {
+    width: 300px;
+  }
+  .box ul, ol {
+    width: 300px;
+  }
+  .box ul li, ol li {
+    width: 300px;
+  }
+  .box {
+    width: 300px;
+  }
+}

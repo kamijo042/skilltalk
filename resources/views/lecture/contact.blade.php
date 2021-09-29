@@ -13,21 +13,21 @@
                                <div class="contact-title">お問合せ</div>
                                <div class="block">
                                    <div class="title">氏名</div>
-                                   <input type="text" class="text" id="name" name="name" value="" placeholder="スキル 太郎">
+                                   <input type="text" required class="text" id="name" name="name" value="" placeholder="スキル 太郎">
                                </div>
                                <div class="block">
                                    <div class="title">電話番号</div>
-                                   <input type="text" class="text" id="tel" name="tel" value="" placeholder="080-1234-5678">
+                                   <input type="text" required class="text" id="tel" name="tel" value="" placeholder="080-1234-5678">
                                </div>
                                <div class="block">
                                    <div class="title">メールアドレス</div>
-                                   <input type="text" class="text" id="email" name="email" value="" placeholder="test@test.com">
+                                   <input type="text" required class="text" id="email" name="email" value="" placeholder="test@test.com">
                                </div>
                                <div class="block">
                                    <div class="title">区分</div>
                                    <div style="display: flex; padding: 8px;">
                                        <span>
-                                         <input type="radio" id="contact-type1" name="contact-type[]" value="1" class="radio-input" >
+                                         <input type="radio" required id="contact-type1" name="contact-type[]" value="1" class="radio-input" >
                                          <label class="contact-type" for="contact-type1">講師・主催者</label>
                                        </span>
                                        <span style="margin-left:16px">
@@ -47,7 +47,7 @@
                                <div class="block">
                                    <div class="title">内容</div>
                                    <div class="send-box">
-                                       <textarea id="message" name="message" rows="4" class="send-box-area"></textarea>
+                                       <textarea id="message" required name="message" rows="4" class="send-box-area"></textarea>
                                    </div>
                                </div>
                                <div class="block text-center">

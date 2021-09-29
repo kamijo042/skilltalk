@@ -54,6 +54,11 @@ Route::group(['prefix' => 'lecture'], function(){
     Route::get('/faq', [App\Http\Controllers\Lecture\FaqController::class, 'index'])->name('lecture.faq');
     Route::get('/contact', [App\Http\Controllers\Lecture\FaqController::class, 'contact'])->name('lecture.contact');
     Route::post('/contact', [App\Http\Controllers\Lecture\FaqController::class, 'send_contact'])->name('lecture.contact.post');
+    Route::get('/privacy', function () {return view('terms.privacy');})->name('lecture.privacy');
+
+    // その他
+    Route::get('/entry', function () {return view('lecture.entry');})->name('lecture.entry');
+
 });
 
 Route::group(['prefix' => 'lecture/mypage'], function(){

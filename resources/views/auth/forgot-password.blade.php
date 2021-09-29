@@ -19,8 +19,8 @@
                     <h2 class="first-color text-dark my-0">パスワードの再設定</h2>
                     <p class="second-color text-50">パスワードを忘れた場合、こちらのフォームから再設定が可能です。下記ボタンをクリックすると、事前に会員登録したメールアドレスへ、パスワード更新用メールが送信されます。</p>
                     @if (session('status'))
-                        <div class="mb-4 font-medium text-sm text-green-600">
-                            {{ session('status') }}
+                        <div class="mb-4 font-medium text-sm notify-text">
+                            パスワード更新用メールを送信しました。<br>受信トレイに届かない場合、迷惑メールをご確認ください。
                         </div>
                     @endif
                     <form class="mt-5 mb-4" action="{{ route('password.email') }}" method="POST">

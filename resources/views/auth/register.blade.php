@@ -39,7 +39,7 @@
                             <label for="exampleInputPassword1" class="text-dark">確認用パスワード</label>
                             <input type="password" placeholder="Enter Password" required class="form-control" id="password_confirmation" name="password_confirmation">
                         </div>
-                        <button class="btn btn-primary btn-lg btn-block">登録する</button>
+                        <button style="margin-top: 40px;" class="btn btn-primary btn-lg btn-block">登録する</button>
                     </form>
                     <a href="{{ route('login') }}" class="text-decoration-none">
                         <p class="text-center">既に登録済みの方はこちら</p>

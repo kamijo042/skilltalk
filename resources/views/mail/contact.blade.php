@@ -208,7 +208,7 @@
                             <tr>
                               <td align='center' style='font-size:0px;padding:10px 0px;word-break:break-word;'>
                                 <div style='color:#4d4d4d;font-family:Oxygen, Helvetica neue, sans-serif;font-size:24px;font-weight:700;line-height:37px;text-align:center;'>
-                                  お問い合わせいただき、ありがとうございました。
+                                  お問い合わせいただき、<br>ありがとうございました。
                                 </div>
                               </td>
                             </tr>
@@ -272,7 +272,7 @@
       <div style="background: #f7f7f7;background-color: #f7f7f7;">
         <div style="margin: 0px auto;max-width: 600px;">
           <div style="padding:8px">【注意事項】</div>
-          <div sytle="margin: 0 16px 0 0;>
+          <div style="margin: 0 24px 0 0;">
           <ul style="margin-bottom: 0px;">
             <li>このメールは、スキルトークへお問い合わせいただいたお客様にお送りしています。</li>
             <li>このメールは送信専用です。直接返信はせず、ご不明な点がございましたら以下のURLよりヘルプページをご確認ください。

@@ -248,6 +248,13 @@ table th,table td{
     font-size: 18px;
 }
 
+.notify-text {
+    color: blue;
+    border: 1px solid blue;
+    padding: 16px;
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 800px) {
   .h-239 {
     height: 176.39px;
